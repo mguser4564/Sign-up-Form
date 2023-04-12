@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,38 +9,53 @@
     <script defer src="script.js"></script>
     <title>Sign-up Form</title>
 </head>
+
 <body>
     <div class="container">
-        <div class="left-column">
-      
+        <div class="left-column" class="blackfade">
         </div>
-        <div class="right-column">
-<div class="right-column-top">
-   <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</p>
-   <p>You know you want to.</p>
-</div>
-<div class="right-column-middle">
-    <p>Let's do this!</p>
-    <form action="example.com/path" method="post">
 
-    <fieldset>
-        <label for="first_name">FIRST NAME</label>
-        <input type="text" id="first_name" name="first_name" placeholder="My name is..." required>
-        <label for="last_name">LAST NAME</label>
-        <input type="text" id="last_name" name="last_name" placeholder="Mr or Ms..." required>
-    </fieldset>
+        <form action="example.com/path" method="post">
+            <div class="right-column">
+                <div class="right-column-top">
+                    <p class="top-slogan">😳 This is not a real online service 👋 You know you need something like this in your life to help you
+                        realize your deepest dreams 🌎 Sign up now to get started! 🛑</p>
+                       
+                    <p class="top-slogan">💃 You know you want to 😜</p>
+                </div>
+                <div class="right-column-middle">
+                    <p class="form-slogan">Let's do this!</p>
+                    <fieldset>
+                        <label for="first_name">FIRST NAME:</label>
+                        <input type="text" id="first_name" name="first_name" placeholder="My name is..." required>
+                        <label for="last_name">LAST NAME:</label>
+                        <input type="text" id="last_name" name="last_name" placeholder="Mr or Ms..." required>
+                    </fieldset>
 
-    <fieldset>
-        <label for="user_email">EMAIL ADDRESS</label>
-        <input type="email" id="user_email" name="email" placeholder="you@example.com" required>
-        <label for="phone_number">PHONE NUMBER</label>
-        <input type="tel" id="phone_number" name="phone_number" placeholder="(123) 456-7890" maxlength="14" onkeyup="formatPhoneNumber(this);" required>
-    </fieldset>
+                    <fieldset>
+                        <label for="user_email">EMAIL ADDRESS:</label>
+                        <input type="email" id="user_email" name="email" placeholder="you@example.com" required>
+                        <label for="phone_number">PHONE NUMBER:</label>
+                        <input type="tel" id="phone_number" name="phone_number" placeholder="(123) 456-7890"
+                            maxlength="14" onkeyup="formatPhoneNumber(this);" required>
+                    </fieldset>
 
-    </form>
-</div>
-<div class="right-column-bottom"></div>
-        </div>
-      </div>
+                    <fieldset>
+                        <label for="password1">ENTER PASSWORD:</label>
+                        <input type="password" id="password1" name="password1" required>
+                      
+                        <label for="password2">CONFIRM PASSWORD:</label>
+                        <input type="password" id="password2" name="password2" required>
+                    </fieldset>
+
+                </div>
+                <div class="right-column-bottom">
+                    <input type="submit" value="Submit">
+                    <p class="bottom-slogan">Already have an account? <a href="">Log in</a> </p>
+                </div>
+            </div>
+        </form>
+    </div>
 </body>
+
 </html>
