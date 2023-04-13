@@ -15,42 +15,41 @@
         <div class="left-column" class="blackfade">
         </div>
 
-        <form action="example.com/path" method="post">
+        <form action="/my-handling-form-page" method="post">
             <div class="right-column">
                 <div class="right-column-top">
                     <p class="top-slogan">😳 This is not a real online service 👋 You know you need something like this in your life to help you
                         realize your deepest dreams 🌎 Sign up now to get started! 🛑</p>
-                       
+                       <br>
                     <p class="top-slogan">💃 You know you want to 😜</p>
                 </div>
                 <div class="right-column-middle">
-                    <p class="form-slogan">Let's do this!</p>
+                    <div class="middle-content">
+                    <legend>Let's do this!</legend>
+                    <br>
                     <fieldset>
-                        <label for="first_name">FIRST NAME:</label>
+                        <label for="first_name">first name</label>
                         <input type="text" id="first_name" name="first_name" placeholder="My name is..." required>
-                        <label for="last_name">LAST NAME:</label>
+                        <label for="last_name">last Name</label>
                         <input type="text" id="last_name" name="last_name" placeholder="Mr or Ms..." required>
                     </fieldset>
-
                     <fieldset>
-                        <label for="user_email">EMAIL ADDRESS:</label>
+                        <label for="user_email">email address</label>
                         <input type="email" id="user_email" name="email" placeholder="you@example.com" required>
-                        <label for="phone_number">PHONE NUMBER:</label>
+                        <label for="phone_number">phone number</label>
                         <input type="tel" id="phone_number" name="phone_number" placeholder="(123) 456-7890"
                             maxlength="14" onkeyup="formatPhoneNumber(this);" required>
                     </fieldset>
-
                     <fieldset>
-                        <label for="password1">ENTER PASSWORD:</label>
-                        <input type="password" id="password1" name="password1" required>
-                      
-                        <label for="password2">CONFIRM PASSWORD:</label>
-                        <input type="password" id="password2" name="password2" required>
+                        <label for="password1">enter password</label>
+                        <input type="password" id="password1" name="password1" placeholder="***********" required>
+                        <label for="password2">confirm password</label>
+                        <input type="password" id="password2" name="password2" placeholder="***********" required>
                     </fieldset>
-
+                </div>
                 </div>
                 <div class="right-column-bottom">
-                    <input type="submit" value="Submit">
+                    <input type="submit" value="Create Account">
                     <p class="bottom-slogan">Already have an account? <a href="">Log in</a> </p>
                 </div>
             </div>
