@@ -213,12 +213,12 @@ table {
 
 .top-slogan {
   font-family: 'akira_expandedsuper_bold', Arial, courier, sans-serif;
-  font-size: clamp(20px, 1.8vw, 40px);
+  font-size: clamp(20px, 2.4vw, 40px);
   color: #d7d7d7;
   text-shadow: 2px 2px 0px black;
   padding-left: 20px;
-  margin-right: 5px;
-  padding-top: 30px;
+  padding-right: 5px;
+  padding-top: 9px;
   z-index: 3;
 }
 
@@ -242,6 +242,11 @@ table {
   border-bottom: solid 10px black;
   padding-left: 5px;
   padding-top: 10px;
+}
+
+#error-message{
+  font-size: 14px;
+  padding-top: 5px;
 }
 
 input[type="submit"] {
@@ -275,9 +280,9 @@ input[type="email"],
 input[type="tel"],
 input[type="password"] {
   display: inline-block;
-  padding: 5px;
+  padding: 10px;
   border: 4px inset black;
-  width: 180px;
+  width: 250px;
 }
 
 input[type="text"]:hover,
@@ -300,9 +305,48 @@ fieldset, legend {
 }
 
 
+@media (max-width: 1280px) {
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="password"] {
+    padding: 8px;
+    width: 180px;
+  }
+}
+
+
+@media (max-width: 1024px) {
+
+  fieldset, legend {
+    padding: 0px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="password"] {
+    padding: 6px;
+    width: 130px;
+  }
+
+  .top-slogan {
+    padding-top: 5px;
+  }
+}
+
 @media (max-width: 768px) {
   fieldset, legend {
     padding: 0px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="password"] {
+    padding: 5px;
+    width: 80px;
   }
 
   .top-slogan {

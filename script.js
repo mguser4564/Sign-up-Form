@@ -1,3 +1,21 @@
+const form = document.getElementById('myForm');
+const passwordInput = document.getElementById('password1');
+const confirmPasswordInput = document.getElementById('password2');
+const submitBtn = document.getElementById('submit-btn');
+const errorMessage = document.getElementById('error-message');
+
+function handleFormSubmit(event) {
+  if (passwordInput.value !== confirmPasswordInput.value) {
+    event.preventDefault();
+    errorMessage.textContent = 'Passwords do not match, try again.';
+  } else {
+    errorMessage.textContent = '';
+    console.log('Passwords match!');
+  }
+}
+
+form.addEventListener('submit', handleFormSubmit);
+
 
 function formatPhoneNumber(input) {
   // Strip all characters from the input except digits
